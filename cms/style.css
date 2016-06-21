@@ -1,0 +1,499 @@
+/*
+Theme Name: Sideboard - Twenty Fifteen
+Author: Sideboard
+Author URI: http://sideboard.io/
+Version: 1.0.0
+Text Domain: sideboard
+*/
+
+/* FRONT PAGE CSS */
+
+#fp-html {
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+#fp-body {
+  background: #fff;
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 100px;
+  display: inline-block;
+}
+
+#fp-header {
+  padding: 1.5rem;
+}
+
+#fp-header span {
+  display: block;
+}
+
+#fp-header span h1 {
+  padding: 5px;
+  font-size: 6rem;
+  font-weight: 100;
+  letter-spacing: -.05em;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+#fp-container {
+  margin-bottom: 150px;
+}
+
+button[name=fp-login] {
+  font-weight: 700;
+  width: 100px;
+  border-radius: 5px;
+}
+
+button[name=fp-signup] {
+  font-weight: 700;
+  width: 100px;
+  border-radius: 5px;
+}
+
+#fp-login {
+  border: 1px solid #ccc;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 40px;
+  width: 430px;
+  background: rgb(238,238,238);
+  background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+  background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+}
+
+#fp-login p.bg-danger {
+  display: none;
+  padding: 5px;
+  margin: 0 0 15px 0;
+  border-radius: 4px;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+#fp-login input {
+  font-weight: 700;
+}
+
+#fp-login a[name=fp-forgot-password] {
+  float: right;
+  color: #337ab7;
+  font-weight: 700;
+}
+
+#fp-login .checkbox {
+  margin-top: 19px;
+  margin-bottom: 0;
+}
+
+.checkbox input {
+  margin-top: 5px;
+}
+
+#fp-login button,
+#fp-signup button,
+#fp-forgot-password button,
+#fp-password-reset button,
+#fp-change-password button {
+  width: 100%;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+#fp-signup,
+#fp-forgot-password,
+#fp-password-reset,
+#fp-change-password,
+#fp-signup-success {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 40px;
+  width: 430px;
+  background: rgb(238,238,238);
+  background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+  background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+}
+
+#fp-signup p.bg-danger {
+  display: none;
+  padding: 5px;
+  margin: 0 0 15px 0;
+  border-radius: 4px;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+#fp-body input {
+  font-weight: 700;
+}
+
+#fp-signup label[for=fp-signup-birthday] {
+  text-align: left;
+  width: 100%;
+}
+
+#fp-signup-birthday {
+  margin-bottom: 15px;
+}
+
+#fp-signup-birthday select[name=fp-signup-birthday-month],
+#fp-signup-birthday select[name=fp-signup-birthday-year] {
+  float: left;
+  -webkit-appearance: menulist-button;
+  height: 30px;
+  background: #fff;
+}
+
+#fp-signup-birthday select[name=fp-signup-birthday-day] {
+  float: left;
+  -webkit-appearance: menulist-button;
+  height: 30px;
+  margin: 0 5px;
+  background: #fff;
+}
+
+#birthday-msg,
+#gender-msg {
+  display: none;
+}
+
+#birthday-msg i.fa-exclamation-circle {
+  color: #B94A48;
+  font-size: 1.8em;
+  position: absolute;
+  top: 28px;
+  right: -10px;
+}
+
+#gender-msg i.fa-exclamation-circle {
+  color: #B94A48;
+  font-size: 1.8em;
+  position: absolute;
+  top: 28px;
+  right: 24px;
+}
+
+#fp-signup-gender-container {
+  padding-top: 4px;
+}
+
+#fp-signup-gender {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#fp-signup-gender select {
+  -webkit-appearance: menulist-button;
+  height: 30px;
+  background: #fff;
+  margin-top: 20px;
+}
+
+#fp-forgot-password p.bg-danger {
+  display: none;
+  padding: 5px;
+  margin: 0 0 15px 0;
+  border-radius: 4px;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+#fp-signup-success {
+  margin: 40px 0 0 0;
+  font-size: 20px;
+}
+
+.popover {
+  background: #B94A48;
+  width: auto;
+}
+
+.popover-content {
+  font-size: 16px;
+  color: #fff;
+}
+
+.popover.left > .arrow:after {
+  border-left-color: #B94A48;
+}
+
+.popover.bottom > .arrow:after {
+  border-bottom-color: #B94A48;
+}
+
+.popover.right > .arrow:after {
+  border-right-color: #B94A48;
+}
+/* FRONT PAGE CSS */
+
+/* PROFILE CSS */
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display:block;
+}
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #ffffff;
+}
+
+.dropdown-submenu .pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
+/* PROFILE CSS*/
+
+/* ERROR PAGE CSS */
+#errorText {
+  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+  font-size: 250px;
+  width: 425px;
+}
+
+#errorMessage {
+  margin: 0 auto;
+	width: 425px;
+	text-align: center;
+	font-size: 2.5em;
+}
+#errorContainer {
+  margin: 0 auto;
+  padding-top:85px;
+  width: 425px
+}
+
+#errorContainer li {
+	display: table;
+	margin: 0px auto 0px auto;
+	list-style: none;
+	position:relative;
+	font-family: 'Roboto', sans-serif;
+}
+
+#errorContainer a:link {
+		text-decoration: none;
+		color: #555555;
+}
+
+#errorContainer a:visited {
+		text-decoration: none;
+		color: #555555;
+}
+
+#errorContainer a:hover {
+		text-decoration: underline;
+		color: #555555;
+}
+
+#errorContainer a:active {
+		text-decoration: underline;
+		color: #555555;
+}
+/* ERROR PAGE CSS */
+
+/* Under Construction CSS */
+@-webkit-keyframes rotateCW {
+   0% { transform: rotate(0deg); }
+   10% { transform: rotate(36deg); }
+   15% { transform: rotate(33deg); }
+   20% { transform: rotate(72deg); }
+   25% { transform: rotate(69deg); }
+   30% { transform: rotate(108deg); }
+   35% { transform: rotate(105deg); }
+   40% { transform: rotate(144deg); }
+   45% { transform: rotate(141deg); }
+   50% { transform: rotate(180deg); }
+   55% { transform: rotate(177deg); }
+   60% { transform: rotate(216deg); }
+   65% { transform: rotate(213deg); }
+   70% { transform: rotate(252deg); }
+   75% { transform: rotate(249deg); }
+   80% { transform: rotate(288deg); }
+   85% { transform: rotate(285deg); }
+   90% { transform: rotate(324deg); }
+   95% { transform: rotate(321deg); }
+   100% { transform: rotate(360deg); }
+  }
+@-moz-keyframes rotateCW {
+   0% { transform: rotate(0deg); }
+   10% { transform: rotate(36deg); }
+   15% { transform: rotate(33deg); }
+   20% { transform: rotate(72deg); }
+   25% { transform: rotate(69deg); }
+   30% { transform: rotate(108deg); }
+   35% { transform: rotate(105deg); }
+   40% { transform: rotate(144deg); }
+   45% { transform: rotate(141deg); }
+   50% { transform: rotate(180deg); }
+   55% { transform: rotate(177deg); }
+   60% { transform: rotate(216deg); }
+   65% { transform: rotate(213deg); }
+   70% { transform: rotate(252deg); }
+   75% { transform: rotate(249deg); }
+   80% { transform: rotate(288deg); }
+   85% { transform: rotate(285deg); }
+   90% { transform: rotate(324deg); }
+   95% { transform: rotate(321deg); }
+   100% { transform: rotate(360deg); }
+  }
+#cog{
+  width: 200px;
+  height: 200px;
+  animation: rotateCW 15s ease-in-out infinite;
+}
+#constructionContainer{
+  max-width: 1170px;
+  max-height: 210px;
+  margin: 50px auto;
+}
+/* Under Construction CSS */
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+/* Profile CSS */
+
+div[name=pro-post-dropdown] .list-group {
+  margin-bottom: 0;
+}
+
+#header-container {
+  border-bottom: 1px solid #ddd;
+  height: 85px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#header-container.shrink {
+  height: 60px;
+}
+
+#header-logo {
+  padding: 5px;
+  font-size: 6rem;
+  font-weight: 100;
+  letter-spacing: -.05em;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+  margin: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#header-container.shadow {
+  -webkit-box-shadow: 0px 0px 2px 0px #232323;
+  -moz-box-shadow:    0px 0px 2px 0px #232323;
+  box-shadow:         0px 0px 2px 0px #232323;
+}
+
+#header-logo.shrink,
+#header-logout.shrink {
+  font-size: 4rem;
+}
+
+#header-logout {
+  margin-top: 40px;
+  float: right;
+  border: 2px solid;
+  border-radius: 13px;
+  padding: 5px;
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: -.05em;
+  cursor: pointer;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#header-username {
+  margin: 22px 5px 0 0;
+  float: right;
+  padding: 5px;
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: -.05em;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+#header-username.shrink {
+  font-size: 1.6rem;
+  margin: 20px 5px 0 0;
+}
+
+/* Profile CSS */
